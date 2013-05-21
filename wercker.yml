@@ -10,9 +10,6 @@ build:
             code: bundle exec middleman build --verbose
 deploy:
     steps:
-        - print-dir-tree:
-            pretty: true
-
         # Execute the heroku-deploy, heroku details can be edited
         # online at http://app.wercker.com/
         - heroku-deploy
