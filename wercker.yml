@@ -12,7 +12,8 @@ deploy:
     steps:
         # Execute the heroku-deploy, heroku details can be edited
         # online at http://app.wercker.com/
-        - heroku-deploy
+        - heroku-deploy:
+            source_dir: non/existing/dir
 
         # Execute the s3sync deploy step, a step provided by wercker
         # - s3sync:
